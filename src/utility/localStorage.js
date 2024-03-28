@@ -16,7 +16,7 @@ const setBook = (id) => {
         localStorage.setItem('read', JSON.stringify(storedReadBooks))
         toast('Books Added to Read list')
     }else{
-        return toast.warn('Allready Read the book')
+        return toast.warn('already been added')
     }
     
 

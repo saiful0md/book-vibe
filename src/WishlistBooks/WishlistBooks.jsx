@@ -13,7 +13,7 @@ const WishlistBooks = () => {
             const wishlistFilter = wishlistAll.filter(book => storedBook.includes(book.id))
             setReadBook(wishlistFilter)
         }
-    },[])
+    },[wishlistAll])
     return (
         <div>
             {

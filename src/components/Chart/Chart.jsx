@@ -54,7 +54,7 @@ const Chart = () => {
     );
 };
 TriangleBar.propTypes = {
-    props: PropTypes
+    props: PropTypes.object
 }
 
 
