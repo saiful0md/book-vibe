@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getStoredReadBook = () => {
     const storedReadBook = localStorage.getItem('read');
     if (storedReadBook) {
@@ -12,7 +14,11 @@ const setBook = (id) => {
     if(!exists){
         storedReadBooks.push(id);
         localStorage.setItem('read', JSON.stringify(storedReadBooks))
+        toast('Books Added to Read list')
+    }else{
+        return toast.warn('Allready Read the book')
     }
+    
 
 }
 

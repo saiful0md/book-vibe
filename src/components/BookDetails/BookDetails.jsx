@@ -1,5 +1,5 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.css';
 import { setBook } from "../../utility/localStorage";
@@ -10,11 +10,10 @@ const BookDetails = () => {
     const detail = details.find(detail => detail.id === idInt);
 
     const handleRead = () => {
-        setBook(detail)
-        toast('Books Added to Read list')
+        setBook(idInt)
     }
     const handleWishlist = () => {
-        toast('')
+        setBook(idInt)
     }
 
     return (

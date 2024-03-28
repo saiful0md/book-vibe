@@ -8,7 +8,7 @@
     "totalPages": 180,
     "rating": 4.5,
     "category": "Classic Fiction",
-    "tags": ["Romance", "Tragedy"],
+    "tags": ["#Romance", "#Tragedy"],
     "publisher": "Scribner",
     "yearOfPublishing": 1925
   },
@@ -21,7 +21,7 @@
     "totalPages": 328,
     "rating": 4.8,
     "category": "Dystopian Fiction",
-    "tags": ["Politics", "Surveillance"],
+    "tags": ["#Politics", "#Surveillance"],
     "publisher": "Secker & Warburg",
     "yearOfPublishing": 1949
   },
@@ -34,7 +34,7 @@
     "totalPages": 281,
     "rating": 4.7,
     "category": "Classic Fiction",
-    "tags": ["Race", "Legal Drama"],
+    "tags": ["#Race", "#Legal Drama"],
     "publisher": "J. B. Lippincott & Co.",
     "yearOfPublishing": 1960
   },
@@ -47,7 +47,7 @@
     "totalPages": 279,
     "rating": 4.6,
     "category": "Romantic Fiction",
-    "tags": ["Romance", "Social Commentary"],
+    "tags": ["#Romance", "#Social Commentary"],
     "publisher": "T. Egerton, Whitehall",
     "yearOfPublishing": 1813
   },
@@ -60,7 +60,7 @@
     "totalPages": 224,
     "rating": 4.4,
     "category": "Coming-of-Age Fiction",
-    "tags": ["Youth", "Identity"],
+    "tags": ["#Youth", "#Identity"],
     "publisher": "Little, Brown and Company",
     "yearOfPublishing": 1951
   },
@@ -73,7 +73,7 @@
     "totalPages": 1178,
     "rating": 4.9,
     "category": "Fantasy Fiction",
-    "tags": ["Adventure", "Magic"],
+    "tags": ["#Adventure", "#Magic"],
     "publisher": "Allen & Unwin",
     "yearOfPublishing": 1954
   },
@@ -86,7 +86,7 @@
     "totalPages": 310,
     "rating": 4.7,
     "category": "Fantasy Fiction",
-    "tags": ["Adventure", "Quest"],
+    "tags": ["#Adventure", "#Quest"],
     "publisher": "George Allen & Unwin",
     "yearOfPublishing": 1937
   },
@@ -99,7 +99,7 @@
     "totalPages": 672,
     "rating": 4.5,
     "category": "Mystery Thriller",
-    "tags": ["Crime", "Investigation"],
+    "tags": ["#Crime", "#Investigation"],
     "publisher": "Norstedts Förlag",
     "yearOfPublishing": 2005
   },
@@ -112,7 +112,7 @@
     "totalPages": 432,
     "rating": 4.6,
     "category": "Psychological Thriller",
-    "tags": ["Marriage", "Deception"],
+    "tags": ["#Marriage", "#Deception"],
     "publisher": "Crown Publishing Group",
     "yearOfPublishing": 2012
   },
@@ -125,7 +125,7 @@
     "totalPages": 309,
     "rating": 4.8,
     "category": "Fantasy Fiction",
-    "tags": ["Magic", "Friendship"],
+    "tags": ["#Magic", "#Friendship"],
     "publisher": "Bloomsbury Publishing",
     "yearOfPublishing": 1997
   }
