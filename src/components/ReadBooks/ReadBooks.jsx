@@ -17,7 +17,6 @@ const ReadBooks = () => {
     },[bookRead])
     return (
         <div>
-            <p></p>
             {
                 readBook.map((book, index) => <div key={index}
                     className="card lg:card-side bg-base-100 shadow-xl my-6 p-8"

@@ -1,9 +1,10 @@
+import Chart from "../Chart/Chart";
 
 
 const PagesRead = () => {
     return (
-        <div>
-            <h1>Pages read</h1>            
+        <div className="max-w-6xl mx-auto my-12">    
+            <Chart></Chart>     
         </div>
     );
 };
