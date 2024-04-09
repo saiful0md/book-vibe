@@ -1,24 +1,24 @@
 
-import { useEffect, useState } from 'react';
 import { CiLocationOn } from 'react-icons/ci';
 import { HiOutlineUsers } from 'react-icons/hi2';
 import { RiPagesLine } from 'react-icons/ri';
-import { Link, useLoaderData } from 'react-router-dom';
-import { getStoredReadBook } from '../../utility/localStorage';
-const ReadBooks = () => {
-    const bookRead = useLoaderData();
-    const [readBook, setReadBook] = useState([])
-    useEffect(()=>{
-        const storedBook = getStoredReadBook()   
-        if(bookRead.length > 0){
-            const booksFilter = bookRead.filter(book => storedBook.includes(book.id))
-            setReadBook(booksFilter)
-        }
-    },[bookRead])
+import { Link } from 'react-router-dom';
+const ReadBooks = ({readBook}) => {
+    console.log(readBook);
+    
+    // const bookRead = useLoaderData();
+    // const [readBook, setReadBook] = useState([])
+    // useEffect(()=>{
+    //     const storedBook = getStoredReadBook()   
+    //     if(bookRead.length > 0){
+    //         const booksFilter = bookRead.filter(book => storedBook.includes(book.id))
+    //         setReadBook(booksFilter)
+    //     }
+    // },[bookRead])
     return (
         <div>
             {
-                readBook.map((book, index) => <div key={index}
+                readBook?.map((book, index) => <div key={index}
                     className="card lg:card-side bg-base-100 shadow-xl my-6 p-8"
                 >
                     <figure><img src={book.image} alt={`the picture of ${book.bookName}`} /></figure>

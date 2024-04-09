@@ -22,11 +22,14 @@ const Chart = () => {
     const bookRead = useLoaderData();
     const [readBook, setReadBook] = useState([])
     useEffect(() => {
-        const storedBook = getStoredReadBook()
-        if (bookRead.length > 0) {
-            const booksFilter = bookRead.filter(book => storedBook.includes(book.id))
-            setReadBook(booksFilter)
+        const loadData = async () => {
+            const storedBook = await getStoredReadBook()
+            if (bookRead.length > 0) {
+                const booksFilter = bookRead.filter(book => storedBook.includes(book.id))
+                setReadBook(booksFilter)
+            }
         }
+        loadData()
     }, [bookRead])
     return (
         <div>

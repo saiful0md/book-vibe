@@ -1,8 +1,8 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.css';
-import { setBook } from "../../utility/localStorage";
+import { setBook, setBookWislist } from "../../utility/localStorage";
 const BookDetails = () => {
     const details = useLoaderData()
     const { id } = useParams();
@@ -13,7 +13,7 @@ const BookDetails = () => {
         setBook(idInt)
     }
     const handleWishlist = () => {
-        setBook(idInt)
+        setBookWislist(idInt)
     }
 
     return (
@@ -74,8 +74,8 @@ const BookDetails = () => {
                     </table>
                 </div>
                 <div className="flex gap-4">
-                    <Link to={``} onClick={handleRead} className=" btn border border-[#131313] px-6 rounded-lg font-semibold font-work hover:bg-[#23BE0A] hover:text-white ">Read</Link>
-                    <Link onClick={handleWishlist} className="btn bg-[#50B1C9] hover:bg-[#09728c] text-white">Wishlist</Link>
+                    <button  onClick={handleRead} className=" btn border border-[#131313] px-6 rounded-lg font-semibold font-work hover:bg-[#23BE0A] hover:text-white ">Read</button>
+                    <button onClick={handleWishlist} className="btn bg-[#50B1C9] hover:bg-[#09728c] text-white">Wishlist</button>
                 </div>
             </div>
             <ToastContainer></ToastContainer>
