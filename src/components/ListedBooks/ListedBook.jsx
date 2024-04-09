@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { getStoredReadBook, getStoredWishlistBook } from "../../utility/localStorage";
 import ReadBooks from "../ReadBooks/ReadBooks";
 
 const ListedBook = () => {
     const [tabIndex, setTabIndex] = useState(0)
-    const bookRead = useLoaderData();
     const [readBook, setReadBook] = useState([]);
     const [readBooks, setReadBooks] = useState([]);
-    // const [displayBook, setDisplayBook] = useState([])
+    
     const handleBookFilter = filter => {
         if (filter === 'rating') {
             const rating = readBook.filter(book => book.rating >= 4.9)
@@ -26,7 +25,6 @@ const ListedBook = () => {
         const loadData = async () => {
             if (tabIndex === 0) {
                 const storedBook = await getStoredReadBook()
-                console.log(storedBook, 'storesBook');
                 setReadBooks(storedBook)
             }
             else if (tabIndex === 1) {
@@ -36,20 +34,6 @@ const ListedBook = () => {
         }
         loadData()
     }, [tabIndex])
-    // useEffect(() => {
-    //     const storedBook = getStoredReadBook()
-    //     if (bookRead > 0) {
-    //         const booksAdd = [];
-    //         console.log(readBook, booksAdd);
-    //         for (const id of storedBook) {
-    //             const book = readBook.filter(book => book.id === id);
-    //             if (book) {
-    //                 booksAdd.push(book)
-    //             }
-    //             setReadBook(booksAdd)
-    //         }
-    //     }
-    // }, [bookRead, readBook])
     return (
         <div className="max-w-6xl mx-auto my-12">
             <h1 className="text-center text-3xl font-bold font-work bg-[#1313130D] rounded-lg my-10 p-3">Books</h1>
